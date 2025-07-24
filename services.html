@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services – RITH</title>
+    <!-- Local styling: no external Bootstrap dependency -->
+    <!-- Icons are rendered locally; no external dependencies required -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">RITH</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="page-header d-flex align-items-center text-white" style="background: url('assets/hero.png') no-repeat center center/cover; min-height: 40vh;">
+      <div class="container text-center mt-5">
+        <h1 class="display-5 fw-bold">Our Services</h1>
+      </div>
+    </section>
+
+    <!-- Services details -->
+    <section class="py-5">
+      <div class="container">
+        <p class="mb-4">
+          Our services are carefully designed to support your business at every
+          stage. We are also an accredited SAIPA training centre.
+        </p>
+        <!-- Service: Accounting -->
+        <div id="accounting" class="mb-5">
+          <h3 class="fw-bold">Accounting</h3>
+          <ul>
+            <li>Compilation and preparation of annual financial statements (ISRS 4410/IFRS for SME/IFRS).</li>
+            <li>Compilation of working papers and working files.</li>
+            <li>Monthly accounting services and payroll services.</li>
+            <li>Preparation of monthly management accounts and VAT services.</li>
+            <li>Training of staff.</li>
+          </ul>
+        </div>
+        <!-- Service: Tax -->
+        <div id="tax" class="mb-5">
+          <h3 class="fw-bold">Tax</h3>
+          <ul>
+            <li>Application and issuing of Tax Compliance Status Pins (Letter of Good Standing).</li>
+            <li>Application and issuing of Tax Directives (IRP5e) and Foreign Investment Allowances (FIA).</li>
+            <li>Calculation, completion and submission of employees’ tax returns (EMP201) and Dividends Tax returns (DTR).</li>
+            <li>Completion and submission of employee tax certificates (IRP5/IT3a), provisional tax returns (IRP6) and annual income tax returns (IT12/IT14).</li>
+            <li>Guidance on tax laws, Tax Administration Act requirements and tax planning.</li>
+            <li>Training of staff.</li>
+          </ul>
+        </div>
+        <!-- Service: Secretarial -->
+        <div id="secretarial" class="mb-5">
+          <h3 class="fw-bold">Secretarial</h3>
+          <ul>
+            <li>Corporate governance and company secretarial services.</li>
+            <li>CIPC registrations, directorate changes and lodgements.</li>
+            <li>Assistance with the requirements and implementation of the Companies Act.</li>
+            <li>Allotment, acquisition and transfer of shares; amendments of authorised and issued share capital.</li>
+            <li>Trust administration, drafting new trust deeds and amendments as required by the Trust Property Control Act.</li>
+            <li>Legal agreements and alterations on Memorandum of Incorporation and shareholders agreements.</li>
+          </ul>
+        </div>
+        <!-- Service: Estates -->
+        <div id="estates" class="mb-5">
+          <h3 class="fw-bold">Estates</h3>
+          <ul>
+            <li>Estate planning tailored to your needs.</li>
+            <li>Drafting of modern wills, including wills incorporating discretionary testamentary trusts.</li>
+            <li>Estate administration and winding up of deceased estates as executors or as agents of nominated executors.</li>
+          </ul>
+        </div>
+        <!-- Service: Advisory -->
+        <div id="advisory" class="mb-5">
+          <h3 class="fw-bold">Advisory</h3>
+          <ul>
+            <li>Structuring of business and group structures.</li>
+            <li>Business valuations and guidance on buying or selling a business.</li>
+            <li>Advice on and preparation of shareholder agreements.</li>
+            <li>Preparation of cash flow projections and tailored financial advice.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h4 class="fw-bold mb-3">Ready to get started?</h4>
+        <p class="text-muted mb-4">Contact us today to discover how we can support your success.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; <span id="year"></span> RITH Professional Services. All rights reserved.</p>
+        <p class="mb-0">Website redesigned by your trusted team.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

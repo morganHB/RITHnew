@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us – RITH</title>
+    <!-- Local styling: no external Bootstrap dependency -->
+    <!-- Icons are rendered locally; no external dependencies required -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">RITH</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="page-header d-flex align-items-center text-white" style="background: url('assets/about.png') no-repeat center center/cover; min-height: 40vh;">
+      <div class="container text-center mt-5">
+        <h1 class="display-5 fw-bold">About Us</h1>
+      </div>
+    </section>
+
+    <!-- About content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-3">Professional Services</h2>
+            <p>
+              We proudly offer professional services rendered by a team of
+              highly qualified professionals. RITH was founded in 2019 after the
+              closure of PriceWaterhouseCoopers in Welkom. Under the leadership
+              of Chartered Accountant and Director Rian van Schalkwyk, the team
+              has flourished and now renders services like accounting, tax,
+              secretarial, estates and advisory services.
+            </p>
+            <p>
+              Our boutique firm views every client relationship as a
+              partnership, and we genuinely believe that our success only comes
+              with your success. We strive to exceed expectations and take you
+              beyond the numbers.
+            </p>
+            <p>
+              Feel free to drop in for a visit at our offices located at 68
+              Prospero Street, Welkom. We would be delighted to meet you and
+              discuss how we can support your business.
+            </p>
+            <a href="contact.html" class="btn btn-primary mt-3">Get in touch</a>
+          </div>
+          <div class="col-md-5">
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-letter">R</div>
+                <h6 class="value-title">Respect</h6>
+                <p class="value-desc">We hold our clients and colleagues in high regard.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-letter">I</div>
+                <h6 class="value-title">Integrity</h6>
+                <p class="value-desc">Honesty and strong moral principles guide us.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-letter">T</div>
+                <h6 class="value-title">Trust</h6>
+                <p class="value-desc">Our relationships are built on trust.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-letter">H</div>
+                <h6 class="value-title">Honesty</h6>
+                <p class="value-desc">We communicate transparently and truthfully.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; <span id="year"></span> RITH Professional Services. All rights reserved.</p>
+        <p class="mb-0">Website redesigned by your trusted team.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
